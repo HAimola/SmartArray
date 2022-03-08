@@ -6,15 +6,14 @@
 template<class T>
 struct SmartArray{
     // Features:
-    //      - Negative indexing for inverse iteration
     //      - Dynamic allocation and resizing (1.125 memory ratio)
     //      - Bound checking on run-time
-    //      - Std::array input and output
     //      - Range based for loops compatibility
+    //      - Negative indexing for inverse iteration
     //      - Reversed view range based for loops with SmartArrayReversed wrapper
+    //      - Std::array input and output
 
-    //protected:
-        T *m_data{};
+    T *m_data{};
 
         // Creates a new dynamically allocated array, copies all current elements
         // to there and deletes old one
